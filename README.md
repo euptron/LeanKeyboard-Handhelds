@@ -1,4 +1,4 @@
-![Logo of LeanKeyboard](img/leankeykeyboard_logo_small.png "Logo of LeanKeyboard") LeanKeyboard-Handheld - A Fork of LeanKeyboard by yuliskov
+![Logo of LeanKeyboard](img/leankeykeyboard_logo_small.png "Logo of LeanKeyboard") LeanKeyboard-Handheld: A Fork of LeanKeyboard by yuliskov
 =========
 
 [![MPLv2 License](http://img.shields.io/badge/license-MIT-blue.svg?style=flat-square)](./LICENSE)
