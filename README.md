@@ -1,14 +1,14 @@
-![Logo of LeanKeyboard](img/leankeykeyboard_logo_small.png "Logo of LeanKeyboard") LeanKeyboard-Handheld: A Fork of LeanKeyboard by yuliskov
+![Logo of LeanKeyboard](img/leankeykeyboard_logo_small.png "Logo of LeanKeyboard") LeanKeyboard-Handhelds: A Fork of LeanKeyboard by yuliskov
 =========
 
 [![MPLv2 License](http://img.shields.io/badge/license-MIT-blue.svg?style=flat-square)](./LICENSE)
 
-__LeanKeyboard: Keyboard for Android-based set-top boxes and TVs:__
+__LeanKeyboard-Handhelds: Keyboard for Android-based handhelds, TVs, and streaming boxes
 
 ### Features:
- * Designed for TV screens.
- * Any remote controller support.
- * Supports dozens of languages.
+ * Designed for Android handhelds.
+ * Compatability with Android powered TVs and streaming boxes.
+ * Controller and remote control input supported.
  * Doesn't depend on Google Services.
  * __No root required!__
 
@@ -16,11 +16,11 @@ __Tip: Switch to other language with language button or by long press on the spa
 
 __Tip: Do long press on the language button to choose between available languages__
 
-### Install LeanKeyboard:
+### Install LeanKeyboard-Handhelds:
 __Standard installation via ADB__
  * If you don't know how to sideload/install apps via ADB, read a tutorial (e.g. <a href="http://kodi.wiki/view/HOW-TO:Install_Kodi_on_Fire_TV" target="_blank">this one</a>)
- * <a href="" target="_blank">Download latest LeanKeyKeyboard APK</a> and sideload/install with adb: 
- * *adb install -r LeanKeyboard.apk*
+ * <a href="" target="_blank">Download latest LeanKeyKeyboard-Handhelds APK</a> and sideload/install with adb: 
+ * *adb install -r LeanKeyboard-Handhelds.apk*
  * Enjoy :)
 
 ### Contributors:
