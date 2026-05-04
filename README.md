@@ -4,10 +4,10 @@ LeanKeyboard-Handhelds: A Fork of LeanKeyboard by yuliskov with a focus on handh
 
 [![MPLv2 License](http://img.shields.io/badge/license-MIT-blue.svg?style=flat-square)](./LICENSE)
 
-**LeanKeyboard-Handhelds**: Keyboard for Android handhelds, TVs, and streaming boxes
+**LeanKeyboard-Handhelds**: Keyboard for Android handhelds, TVs, and streaming devices
 
 ### Features:
-* Designed for Android handhelds, compatible with remotes for Android powered TVs and streaming boxes.
+* Designed for Android handhelds, compatible with remotes for Android powered TVs and streaming devices.
 * For Handhelds: Changed some keybindings to replicate those for the Steam on-screen keyboard as closely as possible
   * Press **Left Trigger** to "hold" and "release" **Shift** key
     * Will attempt to implement holding the trigger to match Steam on-screen keyboard keybinding
