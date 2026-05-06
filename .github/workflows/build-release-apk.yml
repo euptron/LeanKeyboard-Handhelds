@@ -1,10 +1,6 @@
 name: Build Android Debug and Release APK
 
-on:
-  push:
-    branches: [ master ]
-  pull_request:
-    branches: [ master ]
+on: workflow_dispatch
 
 jobs:
   build:
