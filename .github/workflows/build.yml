@@ -1,4 +1,4 @@
-name: Build Android Release APK
+name: Automated Build Android Debug and   Release APK
 on:
   push:
     branches: [ main ]
