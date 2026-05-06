@@ -1,33 +1,36 @@
-name: Automated Build Android Debug and   Release APK
+name: Build Android Debug and Release APK on Commit and Push
+
 on:
   push:
-    branches: [ main ]
-  workflow_dispatch: # Allows manual trigger from the Actions tab
+    branches: [ master ]
+  pull_request:
+    branches: [ master ]
 
 jobs:
   build:
+    name: Build APK
     runs-on: ubuntu-latest
+
     steps:
-      - name: Checkout code
+      - name: Checkout repository
         uses: actions/checkout@v4
 
       - name: Set up JDK
         uses: actions/setup-java@v4
         with:
-          distribution: 'temurin' # Popular choice for Android builds
+          distribution: 'temurin'
           java-version: '17'
-          cache: 'gradle'
 
-      - name: Grant execute permission for gradlew
-        run: chmod +x gradlew
+      - name: Setup Gradle cache
+        uses: gradle/gradle-build-action@v4
 
-      - name: Build Debug APK
+      - name: Build debug APK
         run: ./gradlew assembleDebug
 
       - name: Upload APK
         uses: actions/upload-artifact@v4
         with:
-          name: debug-apk
+          name: Karui-APK
           path: app/build/outputs/apk/debug/app-debug.apk
 
       - name: Decode keystore
@@ -53,7 +56,7 @@ jobs:
             app/build/outputs/apk/release/app-release.apk
 
       - name: Upload Signed APK
-        uses: actions/upload-artifact@v3
+        uses: actions/upload-artifact@v4
         with:
-          name: Release-Signed-APK
+          name: Karui-Signed-APK
           path: app/build/outputs/apk/release/app-release.apk
