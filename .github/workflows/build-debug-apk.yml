@@ -2,9 +2,9 @@ name: Build Debug Android APK
 
 on:
   push:
-    branches: [ main ]
+    branches: [ mastet ]
   pull_request:
-    branches: [ main ]
+    branches: [ master ]
 
 jobs:
   build:
