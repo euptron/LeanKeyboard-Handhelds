@@ -11,12 +11,13 @@ LeanKeyboard-Handhelds: A Fork of LeanKeyboard by yuliskov with a focus on handh
 * For Handhelds: Changed some keybindings to replicate those for the Steam on-screen keyboard as closely as possible
   * Press **Left Trigger** to "hold" and "release" **Shift** key
     * Will attempt to implement holding the trigger to match Steam on-screen keyboard keybinding
+  * **L3** Button to show and hide character keyboard
   * **A** Button to type character
   * **X** Button for **Backspace**
   * **Y** Button for **Spacebar**
   * **Left** and **Right Bumpers** move cursor
   * **Right Trigger** for **Enter**
-  * **B** Button to close Keyboard
+  * **B** Button to close keyboard
 * For users using a remote: Keyboard has buttons for switching to captial letters and punctuation keyboard and special characters keyboard
 * Doesn't depend on Google Services.
 * __No root required!__

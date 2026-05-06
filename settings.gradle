@@ -1,1 +1,1 @@
-include ':leankeykeyboard'
+    include ':leankeykeyboard-handhelds'
