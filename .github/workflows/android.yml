@@ -13,10 +13,10 @@ jobs:
 
     steps:
     - uses: actions/checkout@v4
-    - name: set up JDK 17
+    - name: set up JDK 20
       uses: actions/setup-java@v4
       with:
-        java-version: '17'
+        java-version: '20'
         distribution: 'temurin'
         cache: gradle
 
@@ -24,3 +24,5 @@ jobs:
       run: chmod +x gradlew
     - name: Build with Gradle
       run: ./gradlew build
+    - name: automated-build-android-app-with-github-action
+      uses: amirisback/automated-build-android-app-with-github-action@2.2.7
