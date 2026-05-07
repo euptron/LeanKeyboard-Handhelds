@@ -63,8 +63,8 @@ jobs:
         with:
           name: release-artifacts
           path: |
-            app/build/outputs/apk/release/
-            app/build/outputs/bundle/release/
+            app/build/outputs/apk/release/app-release.apk
+            app/build/outputs/bundle/release/app-release.apk
 
       #4
       - name: Create Github Release
