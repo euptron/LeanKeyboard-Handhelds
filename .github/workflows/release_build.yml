@@ -1,4 +1,4 @@
-name: Build Android Debug and Release APK
+name: Build Signed Android Release APK
 
 on: workflow_dispatch
 
@@ -43,14 +43,6 @@ jobs:
           SIGNING_STORE_PASSWORD: ${{ secrets.SIGNING_STORE_PASSWORD }}
         run: ./gradlew assembleRelease
 
-      - name: Build Release bundle
-        env:
-          SIGNING_KEY_STORE_PATH: ${{ secrets.SIGNING_KEY_STORE_PATH }}
-          SIGNING_KEY_ALIAS: ${{ secrets.SIGNING_KEY_ALIAS }}
-          SIGNING_KEY_PASSWORD: ${{ secrets.SIGNING_KEY_PASSWORD }}
-          SIGNING_STORE_PASSWORD: ${{ secrets.SIGNING_STORE_PASSWORD }}
-        run: ./gradlew bundleRelease
-
       #3
       - name: Upload Release Build to Artifacts
         uses: actions/upload-artifact@v3
@@ -60,7 +52,6 @@ jobs:
             app/build/outputs/apk/release/
             app/build/outputs/bundle/release/
             home/runner/work/LeanKeyboard-Handhelds/LeanKeyboard-Handhelds/app/build/outputs/apk/release/
-            home/runner/work/LeanKeyboard-Handhelds/LeanKeyboard-Handhelds/app/build/outputs/bundle/release/
 
       #4
       - name: Create Github Release
@@ -72,4 +63,3 @@ jobs:
             app/build/outputs/apk/release/app-release.apk
             app/build/outputs/bundle/release/app-release.aab
             home/runner/work/LeanKeyboard-Handhelds/LeanKeyboard-Handhelds/app/build/outputs/apk/release/app-release.apk
-            home/runner/work/LeanKeyboard-Handhelds/LeanKeyboard-Handhelds/app/build/outputs/bundle/release/app-release.abb
