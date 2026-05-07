@@ -27,7 +27,7 @@ buildscript {
         buildToolsVersion = "35.0.0"
         minSdkVersion = 14
         targetSdkVersion = 36
-        espressoCoreVersion = 'com.android.support.test.espresso:espresso-core:2.2.2'
+        espressoCoreVersion = 'com.android.support.test.espresso:espresso-core:3.7.0'
         junitVersion = 'junit:junit:4.12'
         robolectricVersion = 'org.robolectric:robolectric:3.5.1'
         crashlyticsVersion = 'com.crashlytics.sdk.android:crashlytics:2.8.0@aar'
@@ -53,16 +53,16 @@ allprojects {
     }
 
     gradle.projectsEvaluated {
-        tasks.withType(JavaCompile) {
+        tasks.withType(JavaCompile).configureEach {
             options.compilerArgs << "-Xlint:unchecked" << "-Xlint:deprecation"
         }
     }
 }
 
-task clean(type: Delete) {
-    delete rootProject.buildDir
-
-}
+//task clean(type: Delete) {
+//    delete rootProject.buildDir
+//
+//}
 
 // Fix 'Namespace not specified'
 // https://stackoverflow.com/questions/76300671/android-getting-error-namespace-not-specified
