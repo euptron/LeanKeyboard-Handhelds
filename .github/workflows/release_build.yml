@@ -50,7 +50,6 @@ jobs:
           name: release-artifacts
           path: |
             app/build/outputs/apk/release/
-            app/build/outputs/bundle/release/
             home/runner/work/LeanKeyboard-Handhelds/LeanKeyboard-Handhelds/app/build/outputs/apk/release/
 
       #4
@@ -59,7 +58,7 @@ jobs:
         with:
           generate_release_notes: true
           prerelease: true
+          tag: prerelease
           file: |
             app/build/outputs/apk/release/app-release.apk
-            app/build/outputs/bundle/release/app-release.aab
             home/runner/work/LeanKeyboard-Handhelds/LeanKeyboard-Handhelds/app/build/outputs/apk/release/app-release.apk
