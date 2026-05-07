@@ -52,12 +52,8 @@ jobs:
           path: app/build/outputs/apk/release/app-release.apk
 
       #4
-      - name: Create Github Release
-        uses: softprops/action-gh-release@v3
+      - name: Create GitHub Release
+        uses: pipe-cd/actions-gh-release@v2.6.0
         with:
-          generate_release_notes: false
-          prerelease: true
-          owner: gumbyxgames
-          repo: LeanKeyboard-Handhelds
-          tag_name: prerelease
+          token: ${{ secrets.CUSTOM_GITHUB_TOKEN }}
           files: app/build/outputs/apk/release/app-release.apk
