@@ -1,4 +1,4 @@
-name: Build Signed Android Release APK
+name: Build Signed Android Release APK and Create Github Release
 
 on: workflow_dispatch
 
