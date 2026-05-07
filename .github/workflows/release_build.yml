@@ -48,7 +48,7 @@ jobs:
         uses: actions/upload-artifact@v7.0.1
         with:
           name: release-artifact
-          path: home/runner/work/LeanKeyboard-Handhelds/LeanKeyboard-Handhelds/app/build/outputs/apk/release/
+          path: app/build/outputs/apk/release/
 
       #4
       - name: Create Github Release
@@ -60,3 +60,13 @@ jobs:
           tag_name: test_signed_release
           token: ${{ secrets.CUSTOM_GITHUB_TOKEN }}
           files: home/runner/work/LeanKeyboard-Handhelds/LeanKeyboard-Handhelds/app/build/outputs/apk/release/app-release.apk
+          
+      - name: Create Github Release
+        uses: softprops/action-gh-release@v3.0.0
+        with:
+          generate_release_notes: false
+          prerelease: true
+          name: test_signed_build
+          tag_name: test_signed_release
+          token: ${{ secrets.CUSTOM_GITHUB_TOKEN }}
+          files: app/build/outputs/apk/release/app-release.apk
