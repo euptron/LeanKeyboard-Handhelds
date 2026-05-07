@@ -65,8 +65,8 @@ jobs:
           path: |
 #            app/build/outputs/apk/release/app-release.apk
 #            app/build/outputs/bundle/release/app-release.abb
-            home/runner/work/LeanKeyboard-Handhelds/LeanKeyboard-Handhelds/app/build/outputs/apk/release/app-release.apk
-            home/runner/work/LeanKeyboard-Handhelds/LeanKeyboard-Handhelds/app/build/outputs/bundle/release/app-release.abb
+            home/runner/work/LeanKeyboard-Handhelds/LeanKeyboard-Handhelds/app/build/outputs/apk/release/
+            home/runner/work/LeanKeyboard-Handhelds/LeanKeyboard-Handhelds/app/build/outputs/bundle/release/
 
 
       #4
