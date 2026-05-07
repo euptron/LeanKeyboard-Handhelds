@@ -59,6 +59,7 @@ jobs:
           path: |
            app/build/outputs/apk/release/
            app/build/outputs/bundle/release/
+           home/runner/work/LeanKeyboard-Handhelds/LeanKeyboard-Handhelds/app/build/outputs/apk/release/
 
       #4
       - name: Create Github Release
