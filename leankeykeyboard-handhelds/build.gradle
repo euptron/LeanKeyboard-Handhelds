@@ -25,8 +25,8 @@ android {
         versionName "1.1"
 
         testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
-
     }
+
     buildTypes {
         release {
             // https://medium.com/@angelhiadefiesta/how-to-obfuscate-in-android-with-proguard-acab47701577
@@ -37,7 +37,7 @@ android {
 
     // naming example: SmartYouTubeTV_Xwalk_v6.8.12_r.apk
     // https://stackoverflow.com/questions/18332474/how-to-set-versionname-in-apk-filename-using-gradle
-    AndroidComponentsExtension.all { variant ->
+    applicationVariants.all { variant ->
         variant.outputs.each { output ->
             def project = "LeanKeyboard-Handhelds"
             // Latest gradle fix: https://stackoverflow.com/questions/62075122/no-such-property-variantconfiguration-for-class
