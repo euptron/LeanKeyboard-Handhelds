@@ -37,7 +37,7 @@ android {
 
     // naming example: SmartYouTubeTV_Xwalk_v6.8.12_r.apk
     // https://stackoverflow.com/questions/18332474/how-to-set-versionname-in-apk-filename-using-gradle
-    applicationVariants.all { variant ->
+    AndroidComponentsExtension.all { variant ->
         variant.outputs.each { output ->
             def project = "LeanKeyboard-Handhelds"
             // Latest gradle fix: https://stackoverflow.com/questions/62075122/no-such-property-variantconfiguration-for-class
