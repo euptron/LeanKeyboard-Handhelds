@@ -1,4 +1,4 @@
-name: Build Signed Android Release APK and Create Github Release (No Release Notes)
+name: Testing Build Action
 
 on: workflow_dispatch
 
