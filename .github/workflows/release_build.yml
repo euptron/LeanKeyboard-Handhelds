@@ -5,7 +5,7 @@ on:
 #    branches: master
 #    tags:
 #      - v*
-on: workflow_dispatch #For Testing
+workflow_dispatch #For Testing
 
  release_build:
      runs-on: ubuntu-latest
