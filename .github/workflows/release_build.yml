@@ -63,11 +63,10 @@ jobs:
         with:
           name: release-artifacts
           path: |
-            ./app/build/outputs/apk/release/app-release.apk
-            ./app/build/outputs/bundle/release/app-release.abb
-        #    client/build/outputs/apk/release/app-release.apk
-        #    client/build/outputs/bundle/release/app-release.abb
-        #env:
+          #  ./app/build/outputs/apk/release/app-release.apk
+          #  ./app/build/outputs/bundle/release/app-release.abb
+            /home/runner/work/LeanKeyboard-Handhelds/LeanKeyboard-Handhelds/app/build/outputs/apk/release/app-release.apk
+            /home/runner/work/LeanKeyboard-Handhelds/LeanKeyboard-Handhelds/app/build/outputs/bundle/release/app-release.abb
 
 
       #4
@@ -78,5 +77,7 @@ jobs:
           prerelease: true
           tag_name: prerelease
           files: |
-            ./app/build/outputs/apk/release/app-release.apk
-            ./app/build/outputs/bundle/release/app-release.aab
+          #  ./app/build/outputs/apk/release/app-release.apk
+          #  ./app/build/outputs/bundle/release/app-release.aab
+            /home/runner/work/LeanKeyboard-Handhelds/LeanKeyboard-Handhelds/app/build/outputs/apk/release/app-release.apk
+            /home/runner/work/LeanKeyboard-Handhelds/LeanKeyboard-Handhelds/app/build/outputs/bundle/release/app-release.abb
