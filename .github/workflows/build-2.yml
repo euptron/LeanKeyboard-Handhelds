@@ -1,5 +1,3 @@
-name: Rollback Build Android Debug and Release APK
-
 on: workflow_dispatch
 
 jobs:
