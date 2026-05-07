@@ -6,7 +6,6 @@ jobs:
   release_build:
     name: Build APK
     runs-on: ubuntu-latest
-    if: startsWith(github.ref, 'refs/tags/')
 
     steps:
       - name: Checkout Repository
