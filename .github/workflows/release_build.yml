@@ -58,16 +58,18 @@ jobs:
         run: ./gradlew bundleRelease
 
       #3
+      #- run: mkdir -p app/build/outputs/apk/release
+      #- run: mkdir -p app/build/outputs/bundle/release
       - name: Upload Release Build to Artifacts
-        uses: actions/upload-artifact@v4
+        uses: actions/upload-artifact@v7
         with:
           name: release-artifacts
           #if-no-files-found: ignore
-          body_path: ${{ github.workspace }}-CHANGELOG.txt
-          token: ${{ secrets.CUSTOM_GITHUB_TOKEN }}
+          #body_path: ${{ github.workspace }}-CHANGELOG.txt
+          #token: ${{ secrets.CUSTOM_GITHUB_TOKEN }}
           path: |
             app/build/outputs/apk/release/app-release.apk
-            app/build/outputs/bundle/release/app-release.apk
+            app/build/outputs/bundle/release/app-release.abb
         #env:
 
 
