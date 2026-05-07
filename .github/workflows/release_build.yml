@@ -49,7 +49,7 @@ jobs:
         uses: actions/upload-artifact@v7
         with:
           name: release-artifact
-          path: app/build/outputs/apk/release/app-release.apk
+          path: ~/app/build/outputs/apk/release/app-release.apk
 
       #4
       - name: Create Github Release
@@ -58,4 +58,4 @@ jobs:
           generate_release_notes: true
           prerelease: true
           tag_name: prerelease
-          files: app/build/outputs/apk/release/app-release.apk
+          files: ~/app/build/outputs/apk/release/app-release.apk
