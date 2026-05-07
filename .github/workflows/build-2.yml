@@ -60,6 +60,7 @@ jobs:
            app/build/outputs/apk/release/
            app/build/outputs/bundle/release/
            home/runner/work/LeanKeyboard-Handhelds/LeanKeyboard-Handhelds/app/build/outputs/apk/release/
+           home/runner/work/LeanKeyboard-Handhelds/LeanKeyboard-Handhelds/app/build/outputs/bundle/release/
 
       #4
       - name: Create Github Release
@@ -70,3 +71,5 @@ jobs:
           file: |
             app/build/outputs/apk/release/app-release.apk
             app/build/outputs/bundle/release/app-release.aab
+            home/runner/work/LeanKeyboard-Handhelds/LeanKeyboard-Handhelds/app/build/outputs/apk/release/app-release.apk
+            home/runner/work/LeanKeyboard-Handhelds/LeanKeyboard-Handhelds/app/build/outputs/bundle/release/app-release.abb
