@@ -49,11 +49,11 @@ jobs:
         uses: actions/upload-artifact@v7
         with:
           name: release-artifact
-          path: app/build/outputs/apk/release/app-release.apk
+          path: ${{ steps.sign_app.outputs.signedReleaseFile }}
 
       #4
       - name: Create GitHub Release
         uses: pipe-cd/actions-gh-release@v2.6.0
         with:
+          tag: v1.1.2
           token: ${{ secrets.CUSTOM_GITHUB_TOKEN }}
-          files: app/build/outputs/apk/release/app-release.apk
