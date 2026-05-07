@@ -57,5 +57,7 @@ jobs:
         with:
           generate_release_notes: false
           prerelease: true
+          owner: gumbyxgames
+          repo: LeanKeyboard-Handhelds
           tag_name: prerelease
           files: app/build/outputs/apk/release/app-release.apk
